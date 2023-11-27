@@ -1,0 +1,320 @@
+@media (max-width:1245px) and (min-width: 980px){
+    .main_content {
+        margin-top: 80px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:980px) {
+    .main_content {
+        flex-wrap: wrap;
+    }
+    .cart_show {
+        display: none;
+    }
+    .items>h2 {
+        text-align: center;
+    }
+    .cart {
+        margin-top: 30px;
+        padding: 0;
+    }
+    .cart_delivery_close {
+        display: block;
+    }
+    .cart_header:hover {
+        cursor: pointer;
+    }
+    .items_cards {
+        padding: 4px;
+    }
+    .footer {
+        display: block;
+    }
+    .contacts {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .main, .footer {
+        box-sizing: border-box;
+        padding-left: 8vw;
+    }
+    .header_content img {
+        width: 227px;
+        height: 229px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h1>span {
+        font-size: 36px;
+    }
+    .header_content {
+        justify-content: center;
+    }
+    .header_content_text h4 {
+        margin-top: 26px;
+        font-size: 12px;
+    }
+    .header {
+        background-position-y: bottom;
+        max-height: 349px;
+    }
+    .categories ul {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x:scroll;
+        overflow-y: hidden;
+    }
+    ul>li {
+        line-height: 200%;
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .cart_show {
+        display: none;
+    }
+    .cart {
+        padding: 0;
+        margin-top: 0;
+    }
+    .cart_delivery_close {
+        display: block;
+    }
+    .cart_header {
+        justify-content: flex-start;
+        gap: 4vw;
+    }
+    .cart_header:hover {
+        cursor: pointer;
+    }
+    .main_content {
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    .item > h4 {
+        margin-top: 4px;
+        margin-bottom: 16px;
+    }
+    .items span {
+        font-size: 12px;
+        display: block;
+    }
+    .item {
+        padding: 4px;
+    }
+    .itemimg>img {
+        max-width: 137px;
+        max-height: 120px;
+    }
+    .item>button {
+        max-width: 137px;
+        font-size: 12px;
+        padding: 13px 45px;
+        border-radius: 8px;
+    }
+    .items_cards {
+        justify-content: flex-start;
+        gap: 1vw;
+        min-width: 200px;
+    }
+    .footer {
+        display: block;
+        margin-top: 80px;
+    }
+    .footer_logo img:first-child {
+        max-width: 145px;
+        height: 24px;
+    }
+    .footer_logo img:last-child {
+        max-width: 43px;
+        height: 43px;
+    }
+    .contacts {
+        flex-wrap: wrap;
+        margin-top: 36px;
+        column-gap: 24vw;
+        row-gap: 20px;
+    }
+    .contacts h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .contacts span {
+        font-size: 12px;
+    }
+    .authors span {
+        font-size: 12px;
+    }
+    .item_lightbox_card {
+        padding: 16px;
+        max-width: 524px;
+        height: auto;
+    }
+    .item_lightbox_card h3 {
+        bottom: 29px;
+        right: 16px;
+    }
+    .item_lightbox_card_text p{
+       font-size: 12px; 
+    }
+    .item_lightbox_card_text>ul {
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .item_lightbox_card_main {
+        margin-top: 16px;
+    }
+    .item_lightbox_card_main img {
+        max-width: 226px;
+        height: 180px;
+    }
+    .item_lightbox_card_footer {
+        margin-top: 24px;
+    }
+    .item_lightbox_card_footer>button {
+        max-width: 218px;
+        padding: 11px 32px;
+    }
+    .delivery_lightbox_block {
+        width: 100%;
+        max-width: 524px;
+        flex-direction: row-reverse;
+    }
+    .delivery_lightbox_block_img {
+        display: none;
+    }
+    .delivery_lightbox_block_text {
+        padding: 20px 16px;
+        width: 100%;
+        height: 400px;
+        border-radius: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header_content_text {
+        text-align: center;
+        margin-top: 0;
+    }
+    .header_content_text>span {
+        margin-top: 16px;
+    }
+    .header_content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header {
+        max-height: 470px;
+    }
+}
+
+@media (max-width: 375px) {
+    .main, .footer {
+        padding-left: 3vw;
+    }
+    .header{
+       max-height: 415px;
+    }
+    .header_content {
+        margin-top: 0;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .header_content h1{
+        text-align: center;
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .header_content h1 > span {
+        font-size: 30px;
+    }
+    .header_content_text {
+        margin-top: 24px;
+    }
+    .header_content_text h4 {
+        text-align: center;
+        margin-top: 16px;
+    }
+    .cart_header {
+        justify-content: flex-start;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+    .contacts {
+        margin-top: 24px;
+    }
+    .delivery_lightbox_block {
+        border-radius: 0;
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .delivery_lightbox_block_text {
+        padding: 10px;
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .delivery_lightbox_block_text h3 {
+        margin-top: 32px;
+    }
+    .delivery_lightbox_block_text>.closebutton {
+        top: 10px;
+        right: 10px;
+    }
+    .delivery_lightbox_block_text>button {
+        margin-top: 45vh;
+        margin-bottom: 30px;
+    }
+    .item_lightbox {
+        height: 100%;
+    }
+    .item_lightbox_card {
+        max-width: 320px;
+        margin-top: 0;
+        height: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+    .item_lightbox_card h2{
+        margin-top: 22px;
+    }
+    .item_lightbox_card>h3 {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        text-align: right;
+        margin-top: 16px;
+    }
+    .item_lightbox_card_main {
+        flex-direction: column;
+    }
+    .item_lightbox_card_main img {
+        max-width: 300px;
+        height: 232px;
+    }
+    .item_lightbox_card_footer {
+        gap: 8px;
+    }
+    .item_lightbox_card>.closebutton {
+        top: 10px;
+        right: 10px;
+    }
+    .item_lightbox_card_footer {
+        margin-top: 25vh;
+    }
+}

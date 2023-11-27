@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourMeal</title>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/style_text.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <img  src="img/Logo.svg" alt="">
+            <img src="img/Logo_icon.svg" alt="" >
+        </div>
+        <div class="header_content">
+            <img src="img/headerbur.svg" alt="">
+            <div class="header_content_text">
+                <h1>Только самые <br><span>сочные бургеры!</span></h1>
+                <h4>Бесплатная доставка от <span>599₽</span></h4>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="categories">
+            <ul>
+                <li id="burgers" class="active"><img src="img/categories/icon_burger.svg" alt="">Бургеры</li>
+                <li id="onion"><img src="img/categories/icon_onion.svg" alt="">Закуски</li>
+                <li id="hotdogs"><img src="img/categories/icon_hotdog.svg" alt="">Хот-доги</li>
+                <li id="blank"><img src="img/categories/icon_kombo.svg" alt="">Комбо</li>
+                <li id="blank"><img src="img/categories/icon_burrito.svg" alt="">Шаурма</li>
+                <li id="blank"><img src="img/categories/icon_pizza.svg" alt="">Пицца</li>
+                <li id="blank"><img src="img/categories/icon_wok.svg" alt="">Вок</li>
+                <li id="blank"><img src="img/categories/icon_doughnut.svg" alt="">Десерты</li>
+                <li id="blank"><img src="img/categories/icon_sauces.svg" alt="">Соусы</li>
+            </ul>
+        </nav>
+        <div class="main_content">
+            <div class="cart">
+                <div class="cart1">
+                    <div class="cart_header">
+                        <h3>Корзина</h3>
+                        <button>0</button>
+                    </div>
+                    <div class="cart_main cart_show">
+                        <div class="cart_items">
+                            <h4 class="cart_empty">Тут пока пусто :C</h4>
+                            <div class="cart_item burger1">
+                                <img src="img/burger1.svg" alt="" width="64" height="52px">
+                                <div class="cart_item_text">
+                                    <h5>Мясная бомба</h5>
+                                    <span>509г</span>
+                                    <h5 class="price">689₽</h5>
+                                </div>
+                                <div class="cart_item_counter">
+                                    <button class="buttonminuscart">-</button>
+                                    <input type="number" value="0">
+                                    <button class="buttonpluscart">+</button>
+                                </div>
+                            </div>
+                            <div class="cart_item snacks2">
+                                <img src="img/snacks2.svg" alt="" width="64" height="52px">
+                                <div class="cart_item_text">
+                                    <h5>Картошка фри</h5>
+                                    <span>180г</span>
+                                    <h5 class="price">245₽</h5>
+                                </div>
+                                <div class="cart_item_counter">
+                                    <button class="buttonminuscart">-</button>
+                                    <input type="number" value="0">
+                                    <button class="buttonpluscart">+</button>
+                                </div>
+                            </div>
+                            <div class="cart_item hotdog2">
+                                <img src="img/hotdog2.svg" alt="" width="64" height="52px">
+                                <div class="cart_item_text">
+                                    <h5>Жгучий хот-дог</h5>
+                                    <span>245г</span>
+                                    <h5 class="price">239₽</h5>
+                                </div>
+                                <div class="cart_item_counter">
+                                    <button class="buttonminuscart">-</button>
+                                    <input type="number" value="0">
+                                    <button class="buttonpluscart">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart_result">
+                            <h4>Итого</h4>
+                            <h4 class="cart_result_sum">0₽</h4>
+                        </div>
+                        <button id="placeorder">Оформить заказ</button>
+                        <div class="cart_delivery">
+                            <div class="cart_delivery_text">
+                                <img src="img/delivery_icon.svg" alt="">
+                                <h5>Бесплатная доставка</h5>
+                            </div>
+                            <div class="cart_delivery_close"><span>Скрыть</span></div>
+                        </div>
+                    </div>
+                    <div class="delivery_lightbox">
+                        <div class="delivery_lightbox_block">
+                            <div class="delivery_lightbox_block_img"><img src="img/delivery logo.svg" alt=""></div>
+                            <div class="delivery_lightbox_block_text">
+                                <h3>Доставка</h3>
+                                <div class="delivery_lightbox_block_text_inputs">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <input type="text" placeholder="Телефон">
+                                    <div class="delivery_lightbox_delivery_check">
+                                        <div><input type="radio" id="radio1" checked>
+                                            <span>Самовывоз</span>
+                                        </div> 
+                                        <div>   
+                                            <input type="radio" id="radio2">
+                                            <span>Доставка</span>
+                                        </div>
+                                    </div>
+                                    <div class="delivery_lightbox_delivery_adress">
+                                        <input type="text" placeholder="Улица, дом, квартира">
+                                        <div>
+                                            <input type="text" placeholder="Этаж">
+                                            <input type="text" placeholder="Домофон">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button>Оформить</button>
+                                <div class="closebutton"><img src="img/crest.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="items burgers open">
+                <h2>Бургеры</h2>
+                <div class="items_cards">
+                    <div class="item" id='burger1'>
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>Мясная бомба</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                                <div class="item_lightbox_card_main">
+                                    <img src="img/burger1.svg" alt="">
+                                    <div class="item_lightbox_card_text">
+                                        <p>Супер мясное наслаждение! Большая рубленая котлета из свежего говяжего мяса покорит вас своей сочностью, а хрустящие листья салата добавят свежести.</p>
+                                        <ul>Состав:
+                                            <li>Пшеничная булочка</li>
+                                            <li>Котлета из говядины</li>
+                                            <li>Красный лук</li>
+                                            <li>Листья салата</li>
+                                            <li>Соус горчичный</li>
+                                        </ul>
+                                        <span>520г, ккал 430</span>                               
+                                    </div>
+                                </div>
+                                <div class="item_lightbox_card_footer">
+                                    <button class="item_lightbox_card_button">Добавить</button>
+                                    <div class="item_lightbox_card_counter">
+                                        <button class="buttonminus">-</button>
+                                        <input type="number" value="1">
+                                        <button class="buttonplus">+</button>
+                                    </div>
+                                </div>
+                                <h3>689₽</h3>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/burger1.svg" alt=""></div>
+                        <h3>689₽</h3>
+                        <h4>Мясная бомба</h4>
+                        <span>520г</span>
+                        <button class="cardadd">Добавить</button>
+                    </div>
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/burger2.svg" alt=""></div>
+                        <h3>550₽</h3>
+                        <h4>Супер сырный</h4>
+                        <span>512г</span>
+                        <button>Добавить</button>
+                    </div>
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/burger3.svg" alt=""></div>
+                        <h3>639₽</h3>
+                        <h4>Сытный</h4>
+                        <span>580г</span>
+                        <button>Добавить</button>
+                    </div>
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/burger4.svg" alt=""></div>
+                        <h3>480₽</h3>
+                        <h4>Тяжелый удар</h4>
+                        <span>470г</span>
+                        <button>Добавить</button>
+                    </div>
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/burger5.svg" alt=""></div>
+                        <h3>450₽</h3>
+                        <h4>Вечная классика</h4>
+                        <span>450г</span>
+                        <button>Добавить</button>
+                    </div>
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/burger6.svg" alt=""></div>
+                        <h3>560₽</h3>
+                        <h4>Итальянский</h4>
+                        <span>510г</span>
+                        <button>Добавить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items onion">
+                <h2>Закуски</h2>
+                <div class="items_cards">
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/snacks1.svg" alt=""></div>
+                        <h3>250₽</h3>
+                        <h4>Начос</h4>
+                        <span>220г</span>
+                        <button>Добавить</button>
+                    </div>
+                    <div class="item" id="snacks2">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/snacks2.svg" alt=""></div>
+                        <h3>245₽</h3>
+                        <h4>Картошка фри</h4>
+                        <span>180г</span>
+                        <button class="cardadd">Добавить</button>
+                    </div>
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/snacks3.svg" alt=""></div>
+                        <h3>230₽</h3>
+                        <h4>Луковые кольца</h4>
+                        <span>160г</span>
+                        <button>Добавить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items hotdogs">
+                <h2>Хот-доги</h2>
+                <div class="items_cards">
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/hotdog1.svg" alt=""></div>
+                        <h3>290₽</h3>
+                        <h4>Домашний хот-дог</h4>
+                        <span>250г</span>
+                        <button>Добавить</button>
+                    </div>
+                    <div class="item" id="hotdog2">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/hotdog2.svg" alt=""></div>
+                        <h3>239₽</h3>
+                        <h4>Жгучий хот-дог</h4>
+                        <span>245г</span>
+                        <button class="cardadd">Добавить</button>
+                    </div>
+                    <div class="item">
+                        <div class="item_lightbox">
+                            <div class="item_lightbox_card">
+                                <h2>В разработке</h2>
+                                <button class="closebutton"><img src="img/crest.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="itemimg"><img src="img/hotdog3.svg" alt=""></div>
+                        <h3>220₽</h3>
+                        <h4>Классический хот-дог</h4>
+                        <span>215г</span>
+                        <button>Добавить</button>
+                    </div>
+                </div>
+            </div>
+            <div class="items blank">
+                <h2>В разработке</h2>
+                <div class="items_cards"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer_logo">
+            <img src="img/footerlogo.svg" alt="">
+            <img src="img/footerlogoico.svg" alt="">
+        </div>
+        <div class="contacts">
+            <div class="contacts_number">
+                <h3>Номер для заказа</h3>
+                <img src="img/phonelogo.svg" alt="" style="vertical-align: middle;"><span>+7(930)833-38-11</span>
+            </div>
+            <div class="contacts_social"><h3>Мы в соцсетях</h3>
+                <div class="contacts_social_href">
+                    <a href=""><img src="img/telegramico.svg" alt=""></a>
+                    <a href=""><img src="img/vkicon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="authors"><span>© YouMeal, 2022<br>Design: Anastasia Ilina</span></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
